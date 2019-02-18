@@ -134,3 +134,56 @@ print("occurrences of 1 is %d" % occurences)
 
 total = len(array)
 print("total number of numbers in my array is %d" % total)
+
+# Conditions - Python uses boolean variables to evaluate conditions. Boolean values are returned when an expression is compared or evaluated
+
+x = 2
+print(x == 2) # prints true
+print(x == 3) # prints false
+print(x < 3) # prints true
+
+name = "Jenny"
+age = 23
+
+if name == "Jenny" or age == 23:
+    print("woo well done jen you know your name and age")
+else:
+    print("errrrrooor")
+
+## the "in" operator
+array = [1,3,5,7]
+speshnumber = 5
+
+if speshnumber in array:
+    print("wow so spesh")
+
+## when we use "is" - we are not matching the values of the variables, we are match the instances themselves
+
+x = [1,2,3]
+y = [1,2,3]
+print(x == y) # prints true
+print(x is y) # prints false
+
+## using the "not" operator
+print(not False) # prints true
+
+## Exercise - changing the variables in the section so that each if statement resolves as true
+exnumber = 16
+exsecond_number = 10
+exfirst_array = [1,2,3]
+exsecond_array = [1,2]
+
+if exnumber > 15:
+    print("1")
+
+if exfirst_array:
+    print("2")
+
+if len(exsecond_array) == 2:
+    print("3")
+
+if len(exfirst_array) + len(exsecond_array) == 5:
+    print("4")
+
+if exfirst_array and exfirst_array[0] == 1:
+    print("5")
