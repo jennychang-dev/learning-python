@@ -187,3 +187,36 @@ if len(exfirst_array) + len(exsecond_array) == 5:
 
 if exfirst_array and exfirst_array[0] == 1:
     print("5")
+
+# Loops - two types: for and while
+
+## for loop
+
+gals = ["Jenzo", "Mimz", "Keegs", "Liz", "Chrissie", "Bean"]
+for gal in gals:
+    print(gal)
+
+## while loops - repeat as long as a certain bool is met
+
+count = 0
+while count < 6:
+    print(count)
+    count += 1 
+    # this will print 0, 1, 2, 3, 4, 5
+
+### we use break to exit a loop and continue to current block
+
+even = 0
+while True:
+    print(even)
+    even += 2
+    if even >= 12:
+        break
+
+### to print only odd numbers using continue
+
+for x in range(10):
+    if x % 2 == 0:
+        continue
+    print(x)
+
