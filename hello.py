@@ -220,3 +220,61 @@ for x in range(10):
         continue
     print(x)
 
+def my_function_with_args(username, greeting):
+    print("hello %s, %s"%(username, greeting))
+
+my_function_with_args("jc","how are ya today")
+
+
+### return a value
+def add_my_two_numbers(a, b):
+    return a + b
+
+print(add_my_two_numbers(12,15))
+
+list_benefits = ["More organised code", "More readable code", "Easier code reuse", "Allowing programmers to share.. blah blah"]
+
+def build_sentence(benefit):
+    print("%s is a benefit of functions!" %benefit) 
+
+for benefit in list_benefits:
+    build_sentence(benefit)
+
+# Classes and objects
+
+## Example 1
+class FootballPlayer:
+    goals = 23
+
+    def kickABall(self):
+        print("yo i'm super arrogant hi")
+
+cr7 = FootballPlayer()
+print(cr7.goals)
+cr7.kickABall()
+
+## Example 2
+class Vehicle:
+    name = ""
+    kind = ""
+    color = ""
+    value = 100.00
+    def description(self):
+        desc_str = "%s is a %s %s worth $%.2f." % (self.name, self.color, self.kind, self.value)
+        print(desc_str)
+
+car1 = Vehicle()
+car1.name = "Fer"
+car1.kind = "convertible"
+car1.color = "red"
+car1.value = 60000.00
+
+car2 = Vehicle()
+car2.name = "Jump"
+car2.kind = "van"
+car2.color = "blue"
+car2.value = 10000.00
+
+car1.description()
+car2.description()
+
