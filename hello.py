@@ -278,3 +278,40 @@ car2.value = 10000.00
 car1.description()
 car2.description()
 
+# Dictionaries
+
+## one way
+
+capitals = {}
+capitals["UK"] = "London"
+capitals["France"] = "Paris"
+capitals["Sweden"] = "Stockholm"
+
+print(capitals)
+
+## another way
+
+continents = {
+    "Bahrain" : "Middle East",
+    "Indonesia" : "Asia",
+    "Mexico" : "Latin America",
+    "Oslo" : "Norway",
+    "Burundi" : "Africa"
+}   
+
+print(continents)
+
+for country, continent in continents.items():
+    print("%s is in %s" % (country, continent))
+
+### removing a value from a dictionary
+del continents["Indonesia"]
+print(continents)
+
+### or we can delete using "pop"
+continents.pop("Mexico")
+print(continents)
+
+### adding to continents
+continents["Jordan"] = "Middle East"
+print(continents)
